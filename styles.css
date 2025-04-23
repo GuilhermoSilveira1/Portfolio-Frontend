@@ -1,6 +1,5 @@
 /* 
-  RESET BÁSICO: Remove margens e paddings padrões, 
-  facilita o controle do layout e evita inconsistências. 
+  Resetando algumas propriedades do CSS para evitar inconsistências.
 */
 * {
   margin: 0;
@@ -8,12 +7,6 @@
   box-sizing: border-box;
 }
 
-/* 
-  ELIMINA SCROLL VERTICAL:
-  Se você realmente quer impedir que a página role, 
-  use overflow: hidden. Mas lembre-se que isso pode 
-  “cortar” o conteúdo em telas muito pequenas. 
-*/
 html,
 body {
   width: 100%;
@@ -28,7 +21,6 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   padding: 10px 0;
   background-color: #fbb034;
 }
@@ -42,10 +34,7 @@ header p {
 /* CONTEÚDO      */
 /* ============= */
 main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50vh; /* se o topo tem 50vh, esse main pode ter 50vh */
+  height: 100%;
   text-align: center;
   padding: 1rem;
 }
@@ -55,15 +44,16 @@ main {
   margin-bottom: 1rem;
 }
 
-.texto-principal {
-  font-size: 1rem;
-  max-width: 600px;
-  margin: 0 auto 2rem auto;
+.conteudo-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.imagens {
-  display: flex;
-  justify-content: center;
+.texto-principal {
+  width: 50%;
+  padding: 1rem;
+  text-align: justify;
 }
 
 .foto-perfil {
