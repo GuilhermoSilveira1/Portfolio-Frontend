@@ -18,85 +18,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
   font-family: sans-serif;
-}
-
-/* 
-  CONTAINER DO TOPO 
-  - Aqui ficará o padrão de estrelas (animação) 
-  - E o “rasgado” na parte de baixo.
-*/
-.container-topo {
-  position: relative;
-  width: 100%;
-  height: 50vh; /* Ajuste conforme a altura que deseja */
-  overflow: hidden;
-  background: radial-gradient(
-    #f7cb18,
-    #e2cd08
-  ); /* cor de fundo por trás das estrelas */
-}
-
-/* 
-  PADRÃO DE ESTRELA 
-  - Preenchido por estrelas em svg, que se repetem 
-  - Animadas para “deslizar” da esquerda para a direita.
-*/
-#padrao-estrela {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 100%;
-  background: url("imagens/estrela.svg") repeat;
-  background-size: 5%; /* Ajuste conforme a densidade de estrelas desejada */
-  animation: deslizar 30s linear infinite;
-}
-
-/* 
-  Animação de deslizar: background-position passa de 0% a -100% 
-  (ou se preferir, 100% -> 0%, depende do sentido) 
-*/
-@keyframes deslizar {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-/* 
-  CONTAINER RASGADO 
-  - Fica por cima do container-topo, mas “cobre” só a parte inferior, 
-    simulando um efeito de rasgo. 
-  - Usaremos clip-path para criar o recorte.
-  - Dentro dele, vamos repetir uma imagem diagonal ou um gradiente 
-    para criar aquele efeito.
-*/
-.container-rasgado {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px; /* Altura do rasgado */
-  /* Este é o “rasgo” propriamente dito */
-  clip-path: polygon(
-    0 30%,
-    /* Ponto A */ 100% 0,
-    /* Ponto B */ 100% 100%,
-    0 100%
-  );
-
-  /* Repetindo uma imagem diagonal, como no vídeo */
-  background: url("imagens/diagonal.png") repeat-x;
-  background-size: auto 100%;
-  /* Você pode testar outras propriedades como:
-     background-size: cover; 
-     background-size: contain;
-     ou background-position para ajustar o encaixe. 
-  */
 }
 
 /* ============= */
@@ -108,29 +30,19 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 10px 0;
-
-  /* 
-    Caso queira que o header fique sobreposto ao container-topo, 
-    defina position: absolute e um z-index maior. 
-    Mas aqui deixaremos fluxo normal.
-  */
-  background-color: #f0f0f0; /* Exemplo simples de cor, troque se quiser */
+  background-color: #fbb034;
 }
 
 header p {
   cursor: pointer;
   font-weight: bold;
-  /* Outras estilizações desejadas */
 }
 
 /* ============= */
 /* CONTEÚDO      */
 /* ============= */
-
 main {
-  /* A altura do main pode ocupar o restante da página */
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 50vh; /* se o topo tem 50vh, esse main pode ter 50vh */
@@ -163,13 +75,12 @@ main {
 /* ============= */
 /* RODAPÉ        */
 /* ============= */
-
-footer {
-  position: absolute;
+/* footer {
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
   padding: 0.5rem 0;
   background-color: #f0f0f0;
-}
+} */
