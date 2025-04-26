@@ -7,11 +7,43 @@
     <!-- Ligando ao arquivo CSS externo -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="fundo.css" />
+    <link rel="stylesheet" href="textos.css" />
   </head>
   <body>
-    <!--Aqui é criado o fundo da página-->
-    <div class="estrelas"></div>
-    <div class="diagonal"></div>
+    <!-- Fundo de estrela e listra -->
+    <div class="app">
+      <div class="container-estrela">
+        <div class="padrao-estrela"></div>
+        <div class="gradiente-estrela"></div>
+      </div>
+      <div class="container-listra">
+        <div class="padrao-listra"></div>
+      </div>
+
+      <!-- Aqui é colocado o elemento na frente do fundo -->
+      <div id="modal-wrapper">
+        <div id="modal">
+          <div id="modal-background"></div>
+          <div id="modal-content">
+            <div id="modal-message">
+              <p class="sixty-four-font">Save progress?</p>
+            </div>
+            <div id="modal-actions">
+              <button type="button" class="modal-action">
+                <div class="modal-action-pattern"></div>
+                <div class="modal-action-fade"></div>
+                <span class="modal-action-text inter-font">Back</span>
+              </button>
+              <button type="button" class="modal-action">
+                <div class="modal-action-pattern"></div>
+                <div class="modal-action-fade"></div>
+                <span class="modal-action-text inter-font">OK</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- O local onde leva para as outras páginas -->
     <header>
@@ -19,16 +51,48 @@
       <p>Projetos</p>
       <p>Contate-me</p>
     </header>
+    <div class="container">
+      <main>
+        <div class="conteudo-principal">
+          <h1 class="titulo-principal">
+            Guilhermo Silveira -
+            <strong class="destaque-titulo"
+              >Transformando negócios com interfaces únicas!</strong
+            >
+          </h1>
+          <p>
+            Olá, me chamo Guilhermo Silveira. Sou um aluno de Engenharia de
+            Software na UnisenaiPR apaixonado por criar soluções para problemas
+            utilizando programação e desenvolvimento de software.
+          </p>
+          <p class="acessar-redes"><strong>Acesse minhas redes</strong></p>
+          <div class="redes-sociais">
+            <p class="linkedin">
+              <a
+                href="https://www.linkedin.com/in/guilhermo-silveira-9a635522b/"
+                >LinkedIn</a
+              >
+            </p>
+            <p class="github">
+              <a href="https://github.com/GuilhermoSilveira1">Github</a>
+            </p>
+          </div>
+        </div>
+        <div class="conteudo-imagem">
+          <img alt="Guilhermo Silveira" src="imagens/Foto Guilhermo.jpg" />
+        </div>
+      </main>
+    </div>
 
     <!-- Começo do main, e com os textos que serão exibidos na landing page -->
-    <main>
+    <!-- <main>
       <h1 class="titulo-principal">
         Guilhermo Silveira - Transformando negócios com interfaces únicas
-      </h1>
+      </h1> -->
 
-      <!-- Div com o texto principal, assim como a imagem -->
-      <!-- Em uma div para poder colocar a imagem ao lado do texto-->
-      <div class="conteudo-principal">
+    <!-- Div com o texto principal, assim como a imagem -->
+    <!-- Em uma div para poder colocar a imagem ao lado do texto-->
+    <!-- <div class="conteudo-principal">
         <div class="texto-links">
           <p class="texto-principal">
             Olá, me chamo Guilhermo Silveira. Sou um aluno de Engenharia de
@@ -46,7 +110,7 @@
           class="foto-perfil"
         />
       </div>
-    </main>
+    </main> -->
 
     <!-- Um simples footer, apenas para completar o design da página -->
     <!-- <footer>
