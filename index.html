@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guilhermo Silveira - Portfolio</title>
-    <!-- Ligando ao arquivo CSS externo -->
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="fundo.css" />
-    <link rel="stylesheet" href="textos.css" />
+    <!-- Conectando ao arquivo CSS externo -->
+    <link rel="stylesheet" href="styles/fundo.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <!-- Fundo de estrela e listra -->
@@ -20,51 +19,27 @@
         <div class="padrao-listra"></div>
       </div>
 
-      <!-- Aqui é colocado o elemento na frente do fundo -->
-      <div id="modal-wrapper">
-        <div id="modal">
-          <div id="modal-background"></div>
-          <div id="modal-content">
-            <div id="modal-message">
-              <p class="sixty-four-font">Save progress?</p>
-            </div>
-            <div id="modal-actions">
-              <button type="button" class="modal-action">
-                <div class="modal-action-pattern"></div>
-                <div class="modal-action-fade"></div>
-                <span class="modal-action-text inter-font">Back</span>
-              </button>
-              <button type="button" class="modal-action">
-                <div class="modal-action-pattern"></div>
-                <div class="modal-action-fade"></div>
-                <span class="modal-action-text inter-font">OK</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- O local onde leva para as outras páginas -->
-    <header>
-      <p>Sobre mim</p>
-      <p>Projetos</p>
-      <p>Contate-me</p>
-    </header>
+    <!-- Conteúdo principal da página -->
     <div class="container">
       <main>
         <div class="conteudo-principal">
+
+          <!-- Título da Página -->
           <h1 class="titulo-principal">
             Guilhermo Silveira -
             <strong class="destaque-titulo"
               >Transformando negócios com interfaces únicas!</strong
             >
           </h1>
+
+          <!-- Texto principal da página -->  
           <p>
             Olá, me chamo Guilhermo Silveira. Sou um aluno de Engenharia de
             Software na UnisenaiPR apaixonado por criar soluções para problemas
             utilizando programação e desenvolvimento de software.
           </p>
+
+          <!-- Links para o LinkedIn e GitHub -->
           <p class="acessar-redes"><strong>Acesse minhas redes</strong></p>
           <div class="redes-sociais">
             <p class="linkedin">
@@ -78,43 +53,12 @@
             </p>
           </div>
         </div>
+
+        <!-- Imagem da página -->
         <div class="conteudo-imagem">
           <img alt="Guilhermo Silveira" src="imagens/Foto Guilhermo.jpg" />
         </div>
       </main>
     </div>
-
-    <!-- Começo do main, e com os textos que serão exibidos na landing page -->
-    <!-- <main>
-      <h1 class="titulo-principal">
-        Guilhermo Silveira - Transformando negócios com interfaces únicas
-      </h1> -->
-
-    <!-- Div com o texto principal, assim como a imagem -->
-    <!-- Em uma div para poder colocar a imagem ao lado do texto-->
-    <!-- <div class="conteudo-principal">
-        <div class="texto-links">
-          <p class="texto-principal">
-            Olá, me chamo Guilhermo Silveira. Sou um aluno de Engenharia de
-            Software na UnisenaiPR apaixonado por criar soluções para problemas
-            utilizando programação e desenvolvimento de software.
-          </p>
-          <a href="https://github.com/GuilhermoSilveira1">GitHub</a>
-          <a href="https://www.linkedin.com/in/guilhermo-silveira-9a635522b/"
-            >LinkedIn</a
-          >
-        </div>
-        <img
-          alt="Foto de Guilhermo Silveira"
-          src="imagens/Foto Guilhermo.jpg"
-          class="foto-perfil"
-        />
-      </div>
-    </main> -->
-
-    <!-- Um simples footer, apenas para completar o design da página -->
-    <!-- <footer>
-      <p>&copy; 2025 Guilhermo Silveira. Todos os direitos reservados.</p>
-    </footer> -->
   </body>
 </html>
