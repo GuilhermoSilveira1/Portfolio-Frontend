@@ -45,7 +45,7 @@ body {
 }
 
 .padrao-estrela {
-  background-image: url("imagens/image.svg");
+  background-image: url("../imagens/image.svg");
   background-size: 10%;
   position: absolute;
   left: 50%;
