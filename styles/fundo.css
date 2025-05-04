@@ -1,11 +1,9 @@
 :root {
-  --glow-rgb: 245 245 245;
-
-  --light-gold-rgb: 249 181 51;
-  --dark-gold-rgb: 215 147 23;
-
-  --primary-stripe-rgb: 230 230 230;
-  --secondary-stripe-rgb: 240 240 240;
+  --light-blue-rgb: 146 220 229;
+  --dark-blue-rgb: 43, 104, 161;
+  --red-rgb: 23, 17, 35;
+  --primary-stripe-rgb: 248, 243, 242;
+  --secondary-stripe-rgb: 146, 220, 229;
 }
 
 body {
@@ -36,8 +34,8 @@ body {
 
 .container-estrela {
   background: radial-gradient(
-    rgb(var(--light-gold-rgb)),
-    rgb(var(--dark-gold-rgb))
+    rgb(var(--light-blue-rgb)),
+    rgb(var(--dark-blue-rgb))
   );
   height: 100%;
   overflow: hidden;
@@ -64,7 +62,7 @@ body {
   background: radial-gradient(
     circle,
     transparent 75%,
-    rgb(var(--dark-gold-rgb))
+    rgb(var(--dark-blue-rgb))
   );
   position: absolute;
   left: 0px;

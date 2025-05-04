@@ -1,0 +1,61 @@
+:root {
+  --light-blue-rgb: 146 220 229;
+  --dark-blue-rgb: 43, 104, 161;
+  --red-rgb: 23, 17, 35;
+  --primary-stripe-rgb: 248, 243, 242;
+  --secondary-stripe-rgb: 146, 220, 229;
+  --black-rgb: 248, 243, 242;
+}
+
+/* Assim a barra lateral aparece acima do fundo */
+.menu-lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  width: 150px;
+  padding: 20px;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  padding: 2rem;
+  background-color: rgb(var(--dark-blue-rgb));
+  color: white;
+  border: 3px solid rgb(230, 230, 230);
+  border-radius: 5px;
+}
+
+.menu-lateral h3 {
+  margin-top: 0;
+}
+
+.menu-lateral ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.menu-lateral li {
+  margin-bottom: 15px;
+}
+
+.menu-lateral a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu-lateral i {
+  margin-right: 10px;
+}
+
+.minimizar {
+  margin-top: 240px;
+}
