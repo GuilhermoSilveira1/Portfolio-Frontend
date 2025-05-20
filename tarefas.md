@@ -1,1 +1,3 @@
 - [] Fazer com que os links abram em outra aba (HTML)
+- [] Adicionar responsividade no portfólio
+- [] Fazer com que a pessoa possa usar setas para navegar pelos projetos

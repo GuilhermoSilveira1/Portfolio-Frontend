@@ -1,0 +1,74 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.formulario {
+    background-color: #2a2a2a;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+}
+
+.campo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #009acd;
+}
+
+.tabela-dinamica {
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #2a2a2a;
+    color: white;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.tabela-dinamica th,
+.tabela-dinamica td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
